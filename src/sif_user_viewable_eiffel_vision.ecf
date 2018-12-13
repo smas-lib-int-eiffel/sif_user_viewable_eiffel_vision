@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="sif_user_viewable_eiffel_vision" uuid="69A48AC2-76B9-4484-A9B0-4CA148D61759" library_target="sif_user_viewable_eiffel_vision">
+	<target name="sif_user_viewable_eiffel_vision">
+		<root all_classes="true"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<capability>
+			<concurrency support="none"/>
+		</capability>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<library name="sif_core" location="$ISE_LIBRARY/contrib/library/sif/core/src/sif_core.ecf" readonly="false"/>
+		<library name="sif_user_viewable" location="$ISE_LIBRARY/contrib/library/sif/user_viewable/src/sif_user_viewable.ecf" readonly="false"/>
+		<library name="vision2" location="$ISE_LIBRARY/library/vision2/vision2.ecf"/>
+		<cluster name="sif_user_viewable_eiffel_vision" location="." recursive="true" readonly="true"/>
+	</target>
+</system>
